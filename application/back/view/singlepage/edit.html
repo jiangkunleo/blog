@@ -1,0 +1,72 @@
+<div class="admin">
+  <div class="tab">
+    <div class="tab-head"> <strong>单页管理</strong>
+      <ul class="tab-nav">
+        <li class="active"><a href="#tab-set">添加单页</a></li>
+      </ul>
+    </div>
+    <div class="tab-body"> <br />
+      <div class="tab-panel active" id="tab-set">
+        <form method="post" class="form-x" action="{:url('back/singlepage/dealedit')}">
+          <div class="form-group">
+            <div class="label">
+              <label for="sitename">单页标题</label>
+            </div>
+            <div class="field">
+              <input type="text" class="input" id="title" name="title" size="50" placeholder="单页面标题" data-validate="required:请填写您的单页标题" value="{$pageInfo.title}" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="label">
+              <label for="readme">单页内容</label>
+            </div>
+            <div class="field">
+              <textarea class="input1" id="content" name="content" rows="8" cols="50" placeholder="请填写单页内容" data-validate="required:请填写单页内容">{$pageInfo.content}</textarea>
+            </div>
+          </div>
+            <style>
+            .input1{
+                font-size: 14px;
+                padding: 6px;
+                border: solid 1px #ddd;
+                width: 98.5%;
+                height: 495px;
+                line-height: 20px;
+                display: block;
+                border-radius: 4px;
+                -webkit-appearance: none;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+                transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+            }
+            </style>
+
+          <div class="form-button">
+            <input type="hidden" name="page_id" value="{$pageInfo.page_id}">
+            <button class="button bg-main" type="submit">提交</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div style='height:20px; border-bottom:1px #DDD solid'></div>
+  <p class="text-right text-gray" style="float:right">基于<a class="text-gray" target="_blank" href="#">MVC框架</a>构建</p>
+</div>
+<script>
+   // 实例化富文本编辑器
+   var ue = UE.getEditor('content',{
+        initialFrameWidth:900  //初始化编辑器宽度,默认1000
+        ,initialFrameHeight:400  //初始化编辑器高度,默认320
+        , toolbars: [[ // 工具栏的定制
+            'fullscreen', 'source', '|', 'undo', 'redo', '|',
+            'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+            'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+            'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+            'directionalityltr', 'directionalityrtl', 'indent', '|',
+            'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+            'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+
+            'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+             'preview',
+        ]]
+   });
+</script>

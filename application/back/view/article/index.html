@@ -1,0 +1,90 @@
+<script>
+	//定义页面载入事件
+    $(function(){
+        //获取btnAdd按钮
+        $('#btnAdd').bind('click',function(){
+            // 设置“添加文章”链接
+            window.location.href = "{:url('back/article/add')}";
+        });
+    });
+	$(function(){
+		//获取btnAdd按钮
+		$('#btnRecycle').bind('click',function(){
+			// 设置“添加文章”链接
+			window.location.href = "{:url('back/article/recycle')}";
+		});
+	});
+
+</script>
+<div class="admin">
+	<form action="{:url('back/article/delall')}" method="POST">
+    <div class="panel admin-panel">
+    	<div class="panel-head"><strong>文章列表</strong></div>
+        <div class="padding border-bottom">
+            <input type="button" class="button button-small checkall" name="checkall" checkfor="art_id[]" value="全选" />
+            <input type="button" id="btnAdd" class="button button-small border-green" value="添加文章" />
+            <input type="submit" class="button button-small border-yellow"  value="批量删除"  onclick="return confirm('确定要批量删除吗?');"/>
+            <input type="button" class="button button-small border-blue" id="btnRecycle" value="回收站" />
+        </div>
+        <table class="table table-hover">
+        	<tr>
+                <th width="45">选择</th>
+                <th width="120">所属类别</th>
+                <th width="200">文章标题</th>
+                <th width="120">点击率</th>
+                <th width="180">发布时间</th>
+                <th width="180">是否推荐</th>
+                <th width="100">操作</th>
+            </tr>
+            {volist name="artInfo" id="vo"}
+            <tr>
+                <td><input type="checkbox" name="art_id[]" value="{$vo.art_id}" /></td>
+                <td>{$vo.cate_name}</td>
+                <td>{$vo.title}</td>
+                <td>{$vo.hits}</td>
+                <td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+                <td>
+                    {if condition="$vo['is_recommend'] eq '1'"}
+                    <a class="button border-yellow button-little" href="{:url('back/article/ifrecommend',['art_id'=>$vo.art_id,'is_recommend'=>$vo.is_recommend,'page'=>$Request.get.page])}">已推荐</a> 
+                    {else /}
+                    <a class="button border-blue button-little" href="{:url('back/article/ifrecommend',['art_id'=>$vo.art_id,'is_recommend'=>$vo.is_recommend,'page'=>$Request.get.page])}">未推荐</a>
+                    {/if}
+                </td>
+                <td>
+                    <a class="button border-blue button-little" href="{:url('back/article/edit',['art_id'=>$vo.art_id])}">修改</a> 
+                    <a class="button border-yellow button-little" href="{:url('back/article/del',['art_id'=>$vo.art_id])}" onclick="return confirm('确定删除吗？');" >删除</a>
+                </td>
+            </tr>
+            {/volist}
+        </table>
+        <style>
+            .panel-foot .pagination .active span{    
+                color:red;
+                padding: 8px 12px;
+                line-height: 18px;
+                display: block;
+                transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+            }
+            .panel-foot .pagination .disabled span{    
+                color: #333;
+                padding: 8px 12px;
+                line-height: 18px;
+                display: block;
+                transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+            }
+            .panel-foot .pagination li{
+                margin:4px;
+            }
+            .panel-foot .pagination li a{
+                color:blue;
+            }
+        </style>
+
+		<div class="panel-foot text-center">
+        {$page}
+        </div>
+    </div>
+    </form>
+    <br />
+    <p class="text-right text-gray" style="float:right">基于<a class="text-gray" target="_blank" href="#">MVC框架</a>构建</p>
+</div>

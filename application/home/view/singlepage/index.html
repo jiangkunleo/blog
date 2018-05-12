@@ -1,0 +1,30 @@
+  <article>
+    <h3 class="about_h">您现在的位置是：<a href="/">首页</a>><a href="{:url('home/singlepage/index',['page_id'=>2])}">关于我</a></h3>
+    <div class="about">
+      {$pageInfo.content}
+  </article>
+  <aside>
+    <div class="avatar"><a href="about.html"><span>关于湛蓝天空</span></a></div>
+    <div class="topspaceinfo">
+      <h1>执子之手，与子偕老</h1>
+      <p>于千万人之中，我遇见了我所遇见的人....</p>
+    </div>
+    <div class="about_c">
+      <p>网名：{$masterInfo.nickname}</p>
+      <p>职业：{$masterInfo.job} </p>
+      <p>籍贯：{$masterInfo.home}</p>
+      <p>电话：{$masterInfo.tel}</p>
+      <p>邮箱：{$masterInfo.email}</p>
+    </div>
+	<div class="copyright">
+      <ul>
+        <p> Design by <a href="/">湛蓝天空</a></p>
+        <p>粤ICP备11002373号-1</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+  <script src="__home__/js/silder.js"></script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>湛蓝天空个人博客</title>
+<meta name="keywords" content="个人博客,响应式" />
+<meta name="description" content="个人博客,响应式，神秘、俏皮。" />
+<link href="__home__/css/base.css" rel="stylesheet">
+<link href="__home__/css/index.css" rel="stylesheet">
+<link href="__home__/css/style.css" rel="stylesheet">
+<link href="__home__/css/about.css" rel="stylesheet">
+<link href="__home__/css/media.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if lt IE 9]>
+<script src="__home__/js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="ibody">
+  <header>
+    <h1>* Leo *</h1>
+    <h2>坚定信念，相信自己！心是我们坚强的指引...</h2>
+    <div class="logo"><a href="/"></a></div>
+    <nav id="topnav">
+      <a href="{:url('home/index/index')}">首页</a>
+      {volist name="$first_cate" id="vo"}
+      <a href="{:url('home/article/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a>
+      {/volist}
+      <a href="{:url('home/singlepage/index',['page_id'=>2])}">关于我</a>
+      {if condition="$Think.session.user_id gt 0"}
+      <a href="/" style="font-size:12px;margin-left:100px;padding:0;">欢迎您,{$Think.session.user_name}</a>
+      <a href="{:url('home/user/logout')}" style="font-size:12px;padding:0;">&nbsp;退出</a>
+      {else /}
+      <a href="{:url('home/user/login')}" style="font-size:12px;margin-left:100px;padding:0;">登录&nbsp;&nbsp;|</a>
+      <a href="{:url('home/user/register')}" style="font-size:12px;padding:0;">&nbsp;注册</a>
+      {/if}
+    </nav>
+  </header>
+
+  {__CONTENT__}
+
+</body>
+</html>

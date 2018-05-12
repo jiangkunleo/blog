@@ -1,0 +1,72 @@
+  <article>
+    <div class="banner">
+      <ul class="texts">
+        <p>The best life is use of willing attitude, a happy-go-lucky life. </p>
+        <p>最好的生活是用心甘情愿的态度，过随遇而安的生活。</p>
+      </ul>
+    </div>
+    <div class="bloglist">
+      <h2>
+        <p><span>会员</span>登录</p>
+      </h2>
+      <div>
+        <form method="POST" action="{:url('home/user/deallogin')}" >
+          <p>会员名：<input type="text" name="user_name">*请填写您的用户名</p>          
+          <p>密  码：<input type="password" name="pass">*请填写您的密码</p>            
+          <p><input type="submit" value="点击登录"></p>       
+        </form>
+      </div>
+    </div>
+  </article>
+  <aside>
+    <div class="avatar"><a href="about.html"><span>关于湛蓝天空</span></a></div>
+    <div class="topspaceinfo">
+      <h1>执子之手，与子偕老</h1>
+      <p>于千万人之中，我遇见了我所遇见的人....</p>
+    </div>
+    <div class="about_c">
+      <p>网名：{$masterInfo.nickname}</p>
+      <p>职业：{$masterInfo.job} </p>
+      <p>籍贯：{$masterInfo.home}</p>
+      <p>电话：{$masterInfo.tel}</p>
+      <p>邮箱：{$masterInfo.email}</p>
+    </div>
+    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    <div class="tj_news">
+      <h2>
+        <p class="tj_t1">最新文章</p>
+      </h2>
+      <ul>
+        {volist name="newArt" id="vo"}
+        <li><a href="{:url('home/article/show',['art_id'=>$vo.art_id])}">{$vo.title}</a></li>
+        {/volist}
+      </ul>
+      <h2>
+        <p class="tj_t2">推荐文章</p>
+      </h2>
+      <ul>
+        {volist name="rmArtByHits" id="vo"}
+        <li><a href="{:url('home/article/show',['art_id'=>$vo.art_id])}">{$vo.title}</a></li>
+        {/volist}
+      </ul>
+    </div>
+    <div class="links">
+      <h2>
+        <p>友情链接</p>
+      </h2>
+      <ul>
+        <li><a href="/">jiangkun个人博客</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <ul>
+        <p> Design by <a href="/">湛蓝天空</a></p>
+        <p>粤ICP备11002373号-1</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+  <script src="__home__/js/silder.js"></script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 

@@ -1,0 +1,996 @@
+
+/**首页**/
+.personal-center .weui-cells:first-child:before,
+.personal-center .weui-cells:first-child:after{
+    display: none;
+}
+.personal-center .weui-cells .img{
+    background: #189FD9;
+}
+.personal-center .cur-identity{
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #E4E4E4;
+    color: #fff;
+    border-radius: 3px;
+}
+/*复制链接*/
+.copy-link input{
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 3px 0;
+    background: #fff;
+}
+
+/*基本信息*/
+.icon-adviser{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -15px;
+}
+/*用户协议*/
+.user-agreement-title{
+    margin-top: 55px;
+}
+.user-agreement-content{
+    padding: 10px 15px 20px 15px;
+    font-size: 15px;
+}
+.user-agreement-content p{
+    text-indent: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    word-break:break-all;
+    white-space: pre-line;
+}
+
+/*代理管理*/
+.search{
+
+}
+.search{
+    padding: 0 2%;
+}
+.search input{
+    border: 1px solid #ccc;
+    height: 30px;
+    width:80%;
+    border-radius: 3px;
+    padding-left: 7px;
+}
+.search .query-btn{
+    border: none;
+    background: #00AAEE;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    width: 15%;
+    border-radius: 3px;
+    outline: none;
+}
+/*切换*/
+.tabChange-container{
+
+}
+.tabChange-box{
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.rebate-proportion{
+    text-align: right;
+}
+
+.tabChange-box{
+    padding: 15px 0;
+}
+.tabChange-box .tabChange-tab1{
+    width: 50%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+.tabChange-box .tabChange-tab1:first-child{
+   border-right: 1px solid #ccc;
+}
+.player-number{
+    color: #E95C17;
+}
+
+.tab-container{
+    font-size: 12px;
+}
+/*代理管理*/
+.agent-tab{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+}
+.agent-tab thead tr{
+    border-bottom: 1px solid #aaa;
+    font-size: 12px;
+}
+.agent-tab thead tr th{
+    font-weight: 700;
+}
+.agent-tab td,th{
+    text-align: center;
+    padding: 7px 0;
+    font-weight: normal;
+}
+.agent-tab tbody tr{
+    border-bottom: 1px solid #eee;
+}
+.agent-tab tbody tr td:first-child{
+    border-left: none;
+}
+
+
+/*我的玩家*/
+.player-tab{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+}
+.player-tab thead tr{
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+    font-size: 12px;
+}
+.player-tab thead tr th{
+    font-weight: 700;
+}
+.player-tab td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+    font-weight: normal;
+}
+.player-tab tbody tr{
+    border-bottom: 1px solid #eee;
+}
+.player-tab tbody tr td:first-child{
+    border-left: none;
+}
+.player-tab tbody tr img{
+    vertical-align: middle;
+}
+
+.backPlayer-container{
+    width: 100%;
+    text-align: -webkit-center;
+}
+.backPlayer-container .backPlayer{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #F2F2F2;
+    text-decoration: underline;
+}
+
+/*发展代理*/
+.develop-agent-container{
+    margin-top: 20px;
+}
+
+.develop-agent-box{
+    text-align: center;
+    background: #fff;
+    padding: 15px 0;
+}
+
+.player-wx-img img{
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.player-id span,.player-nick span{
+    color: #888;
+}
+.set-prop label{
+    height: 35px;
+    line-height: 35px;
+    width: 25%;
+}
+.set-prop input{
+    padding: 7px 0;
+    border: 1px solid #ddd;
+    width: 65%;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+.set-prop input::-webkit-input-placeholder{
+    color: #ccc;
+}
+
+.develop-agent-box #affirmBtn{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+/*游戏二维码*/
+.header-img{
+    position: relative;
+}
+.img1{
+    position: absolute;
+    top:50%;
+}
+.playerInvite-title .explain{
+    width: 82%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom:40px;
+    text-align: center;
+}
+
+.btn-down-box .btn-down{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 96%;
+    text-align: center;
+    background: #1AAD19;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.code-container{
+    margin-top: 40px;
+}
+
+.code-container .cur-code img{
+    max-width: 167px;
+    border-radius: 3px;
+}
+
+.player-img .cur-img img{
+    max-width: 90px;
+}
+
+
+
+/*代充导航*/
+.replaceRecharge-tab .weui-navbar__item{
+    background: #fff;
+    color: #707070;
+    width: 50%;
+    font-size: 16px;
+    float: left;
+    border-bottom:2px solid #ddd;
+}
+.replaceRecharge-tab .weui-navbar__item:active{
+    background: #EDEDED;
+}
+.replaceRecharge-tab .weui-bar__item_on{
+    border-bottom:2px solid #00AAEE;
+    color: #00AAEE;
+}
+.replaceRecharge-tab .weui-navbar:after,
+.replaceRecharge-tab .weui-navbar__item:after{
+    display: none;
+}
+
+/*代充*/
+.replaceRecharge-details{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.replaceRecharge-details .explain{
+    border: 1px solid #f86860;
+    padding: 10px;
+    width: 85%;
+    margin: auto;
+    color: #f86860;
+}
+
+.subordinate-player-box{
+
+}
+.subordinate-player-box label{
+    height: 35px;
+    line-height: 35px;
+    display: block;
+}
+.subordinate-player-box #subordinate-player{
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    width: 60%;
+}
+.subordinate-player-box .subordinate-id-box{
+    height: 35px;
+    line-height: 35px;
+    width: 30%;
+}
+
+.roomCard-number{
+
+}
+
+.roomCard-number .title{
+    font-weight: normal;
+}
+.roomCard-list{
+    padding-top: 5px;
+}
+.roomCard-list li{
+    width: 140px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    float: left;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.roomCard-list li.active{
+    border: 1px solid #f86860;
+}
+.roomCard-list li:nth-child(2n){
+    margin-left: 10px;
+}
+
+
+/*代充记录表格*/
+.replaceRecharge-record{
+
+}
+.replaceRecharge-record{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+.replaceRecharge-record thead tr{
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+}
+.replaceRecharge-record thead tr th{
+    font-weight: 700;
+}
+.replaceRecharge-record td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+.replaceRecharge-record tbody tr{
+    border-bottom: 1px solid #eee;
+}
+
+/*代充支付详情*/
+.pay-container{
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.pay-info li{
+    margin-bottom: 20px;
+}
+.pay-info li .title{
+    width: 40%;
+    text-align: right;
+    margin-right: 10px;
+}
+.pay-info li div{
+    float: left;
+}
+.pay-info li div:nth-child(2){
+    color: #707070;
+}
+.pay-btn-box{
+    width: 90%;
+    margin: auto;
+    position: fixed;
+    bottom: 30px;
+    left:0;
+    right: 0;
+}
+
+
+/*充值查询*/
+.rechargeQuery-header{
+    background: #fff;
+    padding: 20px 0;
+}
+.rechargeQuery-header{
+
+}
+.query-id-box{
+    width: 85%;
+    border-bottom: 1px solid #ccc;
+    margin: auto;
+}
+.query-id-box .query_id{
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    padding-left: 5px;
+}
+.query-time-box{
+    margin: 15px auto;
+    padding-left: 7%;
+}
+.query-time-box .weui-cell__time{
+   float: left;
+}
+.query-time-box .weui-cell__time input{
+    width: 95px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-left: 3px;
+    margin: auto;
+}
+.rechargeQuery-btn-box{
+    width: 70%;
+    margin: 25px auto 0 auto;
+}
+.rechargeQuery-btn-box .rechargeQuery-btn{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #00AAEE;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.query-content-container{
+    background: #fff;
+}
+.recharge-money{
+    width: 100%;
+}
+.recharge-money li{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.rechargeQuery-tab{
+    width: 100%;
+    border-collapse: collapse;
+}
+.rechargeQuery-tab thead tr{
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+    font-size: 12px;
+}
+.rechargeQuery-tab thead tr th{
+    font-weight: 700;
+}
+.rechargeQuery-tab td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+.rechargeQuery-tab tbody tr{
+    border-bottom: 1px solid #fff;
+}
+.rechargeQuery-tab tbody tr img{
+    vertical-align: middle;
+}
+
+/*提现*/
+.withdraw-tab .weui-navbar__item{
+    background: #fff;
+    color: #707070;
+    width: 50%;
+    font-size: 16px;
+    float: left;
+    border-bottom:2px solid #ddd;
+}
+.withdraw-tab .weui-navbar__item:active{
+    background: #EDEDED;
+}
+.withdraw-tab .weui-bar__item_on{
+    border-bottom:2px solid #00AAEE;
+    color: #00AAEE;
+}
+.withdraw-tab .weui-navbar:after,
+.withdraw-tab .weui-navbar__item:after{
+    display: none;
+}
+
+/*提现方式*/
+.withdraw-way{
+
+}
+.withdraw-way .withdraw-way-title{
+    font-weight: normal;
+}
+.withdraw-btn-box{
+    background: #fff;
+    width: 90%;
+    margin: 30px auto 0 auto;
+}
+.withdraw-title{
+    margin-top:25px;
+    margin-bottom: 5px;
+    background: #fff;
+    padding: 10px 0;
+}
+.withdraw-money,.withdraw-number{
+    width: 50%;
+    text-align: center;
+}
+.withdraw-pop em{
+    width: 35%;
+    text-align: right;
+}
+/*提现记录表格*/
+.withdraw-record{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+.withdraw-record thead tr{
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+}
+.withdraw-record thead tr th{
+    font-weight: 700;
+}
+.withdraw-record td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+.withdraw-record tbody tr{
+    border-bottom: 1px solid #eee;
+}
+
+/*拔钻*/
+.giveDiamond-container{
+    background: #fff;
+    padding-bottom: 30px;
+}
+.giveDiamond-personal{
+    padding: 20px 0;
+}
+.giveDiamond-personal li{
+    margin-bottom: 20px;
+}
+.giveDiamond-personal li label{
+    width: 20%;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    display: inline-block;
+}
+.giveDiamond-personal select{
+    height: 37px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+.giveDiamond-personal li input{
+    width: 35%;
+    border: 1px solid #ddd;
+    padding: 10px 0 10px 5px;
+    vertical-align: middle;
+}
+.giveDiamond-personal li input.number{
+    width: 56%;
+}
+.confirmAdd-box{
+    width: 90%;
+    margin: 30px auto 30px auto;
+}
+/*拔钻记录表格*/
+.giveDiamond-record{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+.giveDiamond-record thead tr{
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+}
+.giveDiamond-record thead tr th{
+    font-weight: 700;
+}
+.giveDiamond-record td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+.giveDiamond-record tbody tr{
+    border-bottom: 1px solid #eee;
+}
+
+.weui_dialog_confirm{
+    background: #000;
+    color: #fff;
+    position: fixed;
+}
+
+
+/*排行榜*/
+.activity-list li{
+    padding: 15px 20px 20px;
+    background: #99CCFF;
+   margin: 0 10px 20px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.goal-success{
+    position: absolute;
+    right: 10px;
+    top:5px;
+}
+.goal-success img{
+    display: block;
+    width: 40px;
+}
+
+.activity-list li a .award-details{
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.activity-list li a .activity-time{
+    text-align: center;
+    color: #616161;
+    margin-bottom: 15px;
+}
+
+.week-performance-box{
+
+}
+.details1,.details2{
+    width: 50%;
+    text-align: center;
+    color: #333;
+}
+
+.chargeAward-tab .weui-navbar__item{
+    background: #fff;
+    color: #707070;
+    width: 50%;
+    font-size: 16px;
+    float: left;
+    border-bottom:2px solid #ddd;
+}
+.chargeAward-tab .weui-navbar__item:active{
+    background: #EDEDED;
+}
+.chargeAward-tab .weui-bar__item_on{
+    border-bottom:2px solid #00AAEE;
+    color: #00AAEE;
+}
+.chargeAward-tab .weui-navbar:after,
+.chargeAward-tab .weui-navbar__item:after{
+    display: none;
+}
+
+/*往期记录表格**/
+.chargeAward-record {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.chargeAward-record thead tr {
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+}
+
+.chargeAward-record thead tr th{
+    font-weight: 700;
+}
+.chargeAward-record td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+.chargeAward-record tbody tr{
+    border-bottom: 1px solid #eee;
+}
+
+/*本期奖励*/
+.curPeriodAward-container{
+    padding: 10px 5px 30px 5px;
+}
+.progress-box{
+    position: relative;
+    width: 100%;
+}
+.progress-box .progress{
+    width: 100%;
+    position: relative;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+.cur-progress{
+    position: absolute;
+    top:0;
+    height: 30px;
+    background: #04BE02;
+    width: 100%;
+    border-radius: 5px;
+}
+.goal-success-box{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.goal-success-box img{
+    display: block;
+    width: 45px;
+}
+/*前往排行榜*/
+.go-rankingList a{
+    width: 60%;
+}
+
+
+/**业绩排行榜**/
+.perRankingList-tab .weui-navbar__item{
+    background: #fff;
+    color: #707070;
+    width: 50%;
+    font-size: 16px;
+    float: left;
+    border-bottom:2px solid #ddd;
+}
+.perRankingList-tab .weui-navbar__item:active{
+    background: #EDEDED;
+}
+.perRankingList-tab .weui-bar__item_on{
+    border-bottom:2px solid #00AAEE;
+    color: #00AAEE;
+}
+.perRankingList-tab .weui-navbar:after,
+.perRankingList-tab .weui-navbar__item:after{
+    display: none;
+}
+
+.my-week-per-container{
+
+}
+.my-week-per{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: #199ED8;
+    text-align: center;
+    position: relative;
+}
+.my-week-per .title,.number,.week-ranking{
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+.my-week-per .title{
+    top:35px;
+}
+.my-week-per .number{
+    top:55px;
+}
+.my-week-per .week-ranking{
+    bottom:30px;
+}
+
+.week-ranking-tab{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+.week-ranking-tab thead tr{
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+}
+.week-ranking-tab thead tr th{
+    font-weight: 700;
+}
+.week-ranking-tab td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+.week-ranking-tab tbody tr{
+    border-bottom: 1px solid #eee;
+}
+
+/*往期记录*/
+.rankingList-record{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.rankingList-record thead tr {
+    border-bottom: 1px solid #aaa;
+    color: #323232;
+}
+
+.rankingList-record thead tr th{
+    font-weight: 700;
+}
+.rankingList-record td,th{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.rankingList-record tbody tr{
+    border-bottom: 1px solid #eee;
+}
+
+/*修改密码*/
+.alert{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    height: 100vh;
+    /*display: none;*/
+}
+.change-password-box{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background: #fff;
+    padding-bottom: 20px;
+    border-radius: 7px;
+}
+.change-password-box h3{
+    padding: 15px 0;
+}
+.change-password-box .weui_label{
+    width: 5em;
+}
+
+.change-password-box .error-password{
+    color: #f00;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.change-password-box .error-password strong{
+    font-weight: normal;
+}
+/**图标**/
+.center-icon{
+    width: 26px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.weui-cells{
+    margin-top: 0 !important;
+}
+.weui-cells:before{
+    border-top: none !important;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction:row;
+    flex-direction: row;
+}
+.form1{
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.form1 label{
+    padding: 0 !important;
+    height: 32px;
+    line-height: 32px;
+    width: 90px;
+    font-weight: normal;
+}
+.form1 input{
+    height: 14px;
+    padding: 15px 0px;
+    font-size: 14px;
+    padding-left: 7px;
+}
+.form1 .input-div{
+    padding: 0 !important;
+}
+.help-block{
+    margin: 0 !important;
+}
+
+.details-alert{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: none;
+}
+.agent-details{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 7px;
+    height: 250px;
+    width: 80%;
+}
+
+.pop-personal-info{
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.directly-under div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+ }
+.directly-under div span{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+.directly-under div em{
+    display: inline-block;
+    margin-left: 10%;
+}
+.agent-details-content{
+    position: relative;
+    height: 100%;
+}
+.close-pop{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #41CDF0;
+    color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}

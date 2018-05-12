@@ -1,0 +1,47 @@
+
+<script>
+	//定义页面载入事件
+	$(function(){
+		//获取btnAdd按钮
+		$('#btnAdd').bind('click',function(){
+			// 添加分类的链接
+			window.location.href = "{:url('back/category/add')}";
+		});
+	});
+</script>
+<div class="admin">
+	<form method="post" action="{:url('back/category/delall')}">
+    <div class="panel admin-panel">
+    	<div class="panel-head"><strong>分类列表</strong></div>
+        <div class="padding border-bottom">
+            <input type="button" class="button button-small checkall" name="checkall" checkfor="cate_id[]" value="全选" />
+            <input type="button" id="btnAdd" class="button button-small border-green" value="添加分类" />
+            <input type="submit" class="button button-small border-yellow" onclick="return confirm('确认批量删除当前分类吗？');"); value="批量删除" />
+            <input type="button" class="button button-small border-blue" value="回收站" />
+        </div>
+        <table class="table table-hover">
+		     <tr>
+                <th width="45">选择</th>
+                <th width="120">所属类别</th>
+                <th width="240">分类名称</th>
+                <th width="*">分类描述</th>
+                <th width="100">操作</th>
+            </tr>
+            {volist name="cate_info" id="vo"}
+            <tr>
+                <td><input type="checkbox" name="cate_id[]" value="{$vo.cate_id}" /></td>
+                <td>{$vo.cate_pid}</td>
+                <td>{$vo.level|str_repeat="---",###}{$vo.cate_name}</td>
+                <td>{$vo.cate_desc|subtext="15"}</td>
+                <td>
+                    <a class="button border-blue button-little" href="{:url('back/category/edit',['cate_id'=>$vo.cate_id])}">修改</a> 
+                    <a class="button border-yellow button-little" href="{:url('back/category/del',['cate_id'=>$vo.cate_id])}" onclick="return confirm('确认删除当前分类吗？');">删除</a>
+                </td>
+            </tr>
+            {/volist}
+        </table>
+    </div>
+    </form>
+    <br />
+    <p class="text-right text-gray">基于<a class="text-gray" target="_blank" href="#">MVC框架</a>构建</p>
+</div>
